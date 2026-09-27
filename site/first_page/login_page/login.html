@@ -29,8 +29,23 @@
                  <div class="field">
                     <label class="label" for="login-username">Username</label>
                     <input class="input" id="login-username" name="username" type="text"
-                        autocomplete="username" required autofocus
+                        autocomplete="username" required autofocus>
                  </div>
+
+                <!-- password part of the form -->
+                 <div class="field">
+                    <div class="label-row">
+                        <label class = "label" for="login-password">Password</label>
+                        <a class="link small" href="../reset_page/reset.html">Forgot password</a>
+                    </div>
+                    <input class="input" id="login-password" name="password" type="passowrd"
+                            autocomplete="current-password" required>
+                 </div>
+                 
+                 <!-- this is going to be a placeholder until i implement an error from login.js -->
+                  <p id="login-error" class="msg msg-error" role="alert" hidden></p>
+
+                  <button class="btn btn-primary" type="submit">Sign in</button>
 
              </form>
 
