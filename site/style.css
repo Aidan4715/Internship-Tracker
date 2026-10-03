@@ -1,0 +1,29 @@
+:root{
+    /*Makes the theme of the page dark*/
+    color-scheme: dark;
+
+    /*background colors*/
+    --bg: #0a0a0f;          /*page*/
+    --surface: 14141f;        /*cards*/
+    --surface-2: #1c1c2b;   /*little chips*/
+    --line: #2a2a3d;        /*boarders/dividers*/
+
+    /*text colors*/
+    --text: #f0eef7;
+    --muted: #9c96b8;
+
+    /*accent colors*/
+    --accent: #a855f7;                          /*links and focus rings*/
+    --accent-btn: #7c3aed;                      /*makes buttons darker*/
+    --accent-hover: #6d28d9;                    /*darker button hover*/
+    --accent-glow: rgba(168, 85, 247, 0.15);    /*see through purple for glows*/
+
+    /*status colors*/
+    --danger: #f87171;
+    --success: #4ade80;
+
+    /*backup fonts*/
+    --font-ui: "Instrument Sans", system-ui, "Segoe UI", sans-serif;
+    --front-mono: "JetBrains Mono", Consolas, monospace;
+
+}
