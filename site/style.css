@@ -92,3 +92,10 @@ p {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
 }
+
+/*main purple button*/
+.btn-primary{
+    width: 100%;
+    background: var(--accent-btn);
+    color: #fff;
+}
