@@ -99,3 +99,14 @@ p {
     background: var(--accent-btn);
     color: #fff;
 }
+
+/*darker when hovering, unless its disabled*/
+.btn-primary:hover:not(:disabled){
+    background: var(--accent-hover);
+}
+
+/*faded intil login.js gets the server*/
+.btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
