@@ -106,3 +106,8 @@
     font-size: 13.5px;
     color: var(--muted);
 }
+
+/* making demo stuff smaller */
+.demo{
+    font-size: 12.5px;
+}
