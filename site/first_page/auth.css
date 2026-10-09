@@ -91,7 +91,7 @@
     gap: 6px;
 }
 
-/* Putting password on left and Forgot Password on the right */
+/* splitting password text and forgot password text */
 .label-row{
     display: flex;
     justify-content: space-between;      /* puts them to opposite ends */
