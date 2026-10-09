@@ -10,7 +10,7 @@
 }
 
 /* main card */
-.auth-car {
+.auth-card {
     width: 100%;
     max-width: 400px;
     padding: 32px 28px 28px;
@@ -19,3 +19,4 @@
     border-radius: 14px;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
 }
+
