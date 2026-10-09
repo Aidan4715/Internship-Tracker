@@ -79,3 +79,21 @@
     color: var(--muted);
 }
 
+/* the forms layout */
+.auth-form{
+    display: grid;
+    gap: 16px;
+}
+
+/* labels on top */
+.field{
+    display: grid;
+    gap: 6px;
+}
+
+/* Putting password on left and Forgot Password on the right */
+.label-row{
+    display: flex;
+    justify-content: space-between;      /* puts them to opposite ends */
+    align-items: baseline;
+}
