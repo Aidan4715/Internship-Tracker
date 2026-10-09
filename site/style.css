@@ -128,8 +128,8 @@ p {
 
 /* makes a ring when tabbing to the link */
 .link:focus-visible {
-    outline: 2pc solid var(--accent);
-    outline-offset: 2px;
+    outline: .15pc solid var(--accent);
+    outline-offset: 0px;
     border-radius: 3px;
 }
 
