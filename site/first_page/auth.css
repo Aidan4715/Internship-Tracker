@@ -27,8 +27,6 @@
     gap: 10px;
     margin-bottom: 26px;
     font-size: 13px;
-    font-weight: 13px;
-    font-weight: 600;
 }
 
 /* logo */
@@ -96,4 +94,15 @@
     display: flex;
     justify-content: space-between;      /* puts them to opposite ends */
     align-items: baseline;
+}
+
+/* card footer */
+.card-foot{
+    display: grid;
+    gap: 10px;                          /* space between New here and demo line */
+    margin-top: 22px;                   /* space between the form and divider line */
+    padding-top: 18px;                  /* space between divider line and text */
+    border-top: 1px solid var(--line);  /* divider line */
+    font-size: 13.5px;
+    color: var(--muted);
 }
