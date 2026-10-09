@@ -118,7 +118,7 @@ p {
 .link {
     color: var(--accent);
     font-weight: 500;
-    text-decoration: none;          /* this makes the underline disapear whne hovering over it */
+    text-decoration: none;          /* this makes the underline appear when hovering over it */
 }
 
 .link:hover {
@@ -160,7 +160,7 @@ p {
 .msg-success{
     color: var(--success);
     background: rgba(74, 222, 128, 0.1);
-    border: 1px solid rgba(74, 222, 128, 0.3)
+    border: 1px solid rgba(74, 222, 128, 0.3);
 }
 
 
