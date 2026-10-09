@@ -162,3 +162,16 @@ p {
     background: rgba(74, 222, 128, 0.1);
     border: 1px solid rgba(74, 222, 128, 0.3)
 }
+
+
+
+/* codelike text font */
+.chip {
+    padding: 2px 6px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text);
+}
