@@ -43,11 +43,11 @@ form.addEventListener("submit", async (event)=> {
             window.location.href = "../../index.html";                  //goes to the main site
             return;
         }
-        if(response.status === 401){                                    //wrong details
+        if(response.status === 401){                                    //wrong credentials
             showError("Incorrect username or password.");
         }
         else{                                                           //server problem
-            showError("Something went wrong. PLease try again.");
+            showError("Something went wrong. Please try again.");
         }
     }
 
