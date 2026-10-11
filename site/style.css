@@ -175,3 +175,33 @@ p {
     font-size: 12px;
     color: var(--text);
 }
+
+/* spinnneeerrrrrrr */
+.spinner{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    vertical-align: -2pc;                             /* leveling with the text */
+    border: 2pc solid rgba(255, 255, 255, 0.35);    /* faint ring */
+    border-top-color: #fff;                         /* the bright edhe that spins */
+    border-radius: 50%;                               /* makes it a circle */
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }    /* 360 degree turn */
+}
+
+@media (prefers-reduced-motion: reduce){
+    .spinner{
+        animation-duration: 1.6s;
+    }
+}
+
+.btn[aria-busy = "true"]:disabled{
+    opacity: 1;
+    cursor: progress;
+}
