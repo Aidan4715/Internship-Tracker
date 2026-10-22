@@ -22,13 +22,27 @@
                 Internship Tracker
             </div>
                 <div id="signup-step">
+                    <!--text to show create account text-->
                     <h1 class = "auth-title">
                         Create a new account
                     </h1>
                 </div>
 
             <form id="signup-form" class="auth-form">
-                
+                <div class="feild">
+                    <!-- adds the username text-->
+                    <label class="label" form="signup-username">
+                        Username
+                    </label>
+                    <input class="input" id="signup-username" name="username" type="text"
+                        autocomplete="username" required
+                        pattern="[A-Za-z0-9\-]{3,30}" maxlength="30"
+                        title="3 to 30 characters: letters, numbers and dashes"
+                        aria-describedby="signup-username-hint">
+                    <span class="hint" id="signup-username-hint">
+                        3-30 characters: letters, numbers, and dashes.
+                </span>
+                </div>
             </form>
                 
 
