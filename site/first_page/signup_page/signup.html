@@ -29,6 +29,7 @@
                 </div>
 
             <form id="signup-form" class="auth-form">
+                <!-- username input and display of its requirments-->
                 <div class="feild">
                     <!-- adds the username text-->
                     <label class="label" form="signup-username">
@@ -43,6 +44,32 @@
                         3-30 characters: letters, numbers, and dashes.
                 </span>
                 </div>
+
+                <!-- password input along with its requirnments-->
+                 <div class="field">
+                    <label class="label" for="signup-password">
+                        Passowrd
+                    </label>
+                    <!-- password input handeling-->
+                    <input class="input" id="signup-password" name="password" type="password"
+                        autocomplete="new-password" required minlength="8" pattern="[0-9]"
+                        aria-describeby="signup-password-hint">
+                    <!-- password requirments -->
+                    <span class="hint" id="signup-password-hint">
+                        At least 8 characters including 1 number.
+                    </span>
+                 </div>
+
+                 <!-- second password input area-->
+                 <div class="field">
+                    <label class="label" for="signup-confirm">
+                        Confirm password
+                    </label>
+                    <input class="input" id="signup-confirm" name="confirm" type="password"
+                        autocomplete="new-passowrd" required>
+                 </div>
+                
+
             </form>
                 
 
