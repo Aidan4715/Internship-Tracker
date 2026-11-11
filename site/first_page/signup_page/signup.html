@@ -89,6 +89,33 @@
 
                 </div>
 
+                <!-- This is going to be shown once the account is created -->
+                 <div id="code-step" hidden>
+                    <h1 class="auth-title">
+                        Save your recovery code
+                    </h1>
+
+                    <p class="auth-sub">
+                        If your password is forgotten. This code will be the way you are able to recover your account.
+                    </p>
+
+                    <!-- display so that signup.js can fill in with actual information -->
+                    <div class="code-box">
+                        <div class="code-value" id="recovery-code">
+                            XXXX-XXXX-XXXX-XXXX-XXXX
+                        </div>
+                        
+                        <div class="code-actions">
+                            <span>
+                                Shown Once · Single Use
+                            </span>
+                        </div>
+                    </div>
+
+
+
+                 </div>
+
         </main>
         <script src="signup.js" defer></script>
     </body>
