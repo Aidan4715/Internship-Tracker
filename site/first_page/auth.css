@@ -111,3 +111,15 @@
 .demo{
     font-size: 12.5px;
 }
+
+/* This is going to be the recovery box formats and colors */
+.code-box{
+    display: grid;
+    gap: 12px;
+    margin: bottom;
+    padding: 20px 16px;
+    background: var(--bg);
+    border: 1px dashed var(--accent);
+    border-radius: 10px;
+    text-align: center;
+}
