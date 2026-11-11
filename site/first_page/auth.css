@@ -147,3 +147,7 @@
     cursor: pointer;
 }
 
+.check input{
+    margin: 3px 0 0;
+    accent-color: var(--accent-btn)
+}
