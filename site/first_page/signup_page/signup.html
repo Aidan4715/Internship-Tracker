@@ -90,7 +90,7 @@
                 </div>
 
                 <!-- This is going to be shown once the account is created -->
-                 <div id="code-step" hidden>
+                <div id="code-step" hidden>
                     <h1 class="auth-title">
                         Save your recovery code
                     </h1>
@@ -112,9 +112,18 @@
                         </div>
                     </div>
 
+                    <!-- The box to confirm the user understands -->
+                    <form id="code-form" class="auth-form">
+                        <label class="check">
+                            <input type="checkbox" id="code-saved">
+                            I have saved my revovery code in a safe place
+                        </label>
+                        <button class="btn btn-primary" id="code-continue" type="submit" disabled>
+                            Continue to tracker site.
+                        </button>
+                    </form>
 
-
-                 </div>
+                </div>
 
         </main>
         <script src="signup.js" defer></script>
