@@ -123,3 +123,11 @@
     border-radius: 10px;
     text-align: center;
 }
+
+/* making the recovery code in typewritter font(looks like code block) */
+.code-value{
+    font-family: var(--font-mono);
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    user-select: all; /* when user clicks recovery code whole thing is selected to copy paste easier */
+}
