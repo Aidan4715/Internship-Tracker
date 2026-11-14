@@ -134,6 +134,9 @@
 
 /* making less focus on shown once text by changing size and color */
 .code-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 14.5px;
     color: var(--muted);
 }
