@@ -75,10 +75,10 @@ form.addEventListener("submit", async(event) =>{
             showError("Sorry that username was already taken.");
         }
         else if(response.status === 403){
-            showError("New accounts are currelty not being accepted");
+            showError("New accounts are currently not being accepted");
         }
         else{
-            showError("Something went broke. Please try again");
+            showError("Something broke. Please try again");
         }
     }
     catch{
@@ -87,3 +87,4 @@ form.addEventListener("submit", async(event) =>{
     
     setBusy(false);
 });
+
