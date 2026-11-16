@@ -88,3 +88,28 @@ form.addEventListener("submit", async(event) =>{
     setBusy(false);
 });
 
+// Unlocks the continue button whenever the I saved my code is ticked off
+savedBox.addEventListener("change", () =>{
+    continueBtn.disabled = !savedBox.checked;
+})
+
+// Brings you to tracker whenever continue button is clicked
+codeForm.addEventListener("submit", (event) =>{
+    event.preventDefault();
+    window.location.href = "../../index.html";
+});
+
+// Copies the recovery code to your clipboard
+copyBtn.addEventListener("click", async() =>{
+    try{
+        await navigator.clipboard.writeText(codeValue.textContent.trim());
+        copyBtn.textContent = "Copied";
+    }
+    catch{
+        copyBtn.textContent = "Automatic copy didn't work. Please manually copy it.";
+    }
+    setTimeout(() =>{
+        copyBtn.textContent = "Copy";
+    }, 2000);
+
+});
