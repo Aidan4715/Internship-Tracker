@@ -37,7 +37,53 @@ function setBusy(busy){
 
 // Swapping the signup page to the recovery code page
 function showCodeStep(code){
-    codeValue.textContent = code
+    codeValue.textContent = code;
     signupStep.hidden = true;
     codeStep.hidden = false;
 }
+
+// Whenever button or enter is pressed the signup form will be submitted
+form.addEventListener("submit", async(event) =>{
+    event.preventDefault();
+    showError("");
+
+    const username = form.eleements.username.value.trim();
+    const password = form.elements.password.value;
+    const confirm = form.elements.confirm.value;
+
+    if(password !== confirm){
+        showError("Passwords do not match.");
+        return;
+    }
+
+    setBusy(true);
+
+    try{
+        const response = await("/api/signup", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({username, password})
+        });
+
+        if(response.ok){
+            const data = await response.json();
+            showCodeStep(data.recoveryCode);
+            return
+        }
+
+        if(response.status === 409){
+            showError("Sorry that username was already taken.");
+        }
+        else if(response.status === 403){
+            showError("New accounts are currelty not being accepted");
+        }
+        else{
+            showError("Something went broke. Please try again");
+        }
+    }
+    catch{
+        showError("Server was not able to be reached")
+    }
+    
+    setBusy(false);
+})
