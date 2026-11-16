@@ -91,7 +91,7 @@ form.addEventListener("submit", async(event) =>{
 // Unlocks the continue button whenever the I saved my code is ticked off
 savedBox.addEventListener("change", () =>{
     continueBtn.disabled = !savedBox.checked;
-})
+});
 
 // Brings you to tracker whenever continue button is clicked
 codeForm.addEventListener("submit", (event) =>{
