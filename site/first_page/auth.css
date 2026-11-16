@@ -116,7 +116,7 @@
 .code-box{
     display: grid;
     gap: 12px;
-    margin: bottom;
+    margin-bottom: 24px;
     padding: 20px 16px;
     background: var(--bg);
     border: 1px dashed var(--accent);
