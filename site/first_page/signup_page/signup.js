@@ -47,7 +47,7 @@ form.addEventListener("submit", async(event) =>{
     event.preventDefault();
     showError("");
 
-    const username = form.eleements.username.value.trim();
+    const username = form.elements.username.value.trim();
     const password = form.elements.password.value;
     const confirm = form.elements.confirm.value;
 
@@ -59,7 +59,7 @@ form.addEventListener("submit", async(event) =>{
     setBusy(true);
 
     try{
-        const response = await("/api/signup", {
+        const response = await fetch("/api/signup", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({username, password})
@@ -68,7 +68,7 @@ form.addEventListener("submit", async(event) =>{
         if(response.ok){
             const data = await response.json();
             showCodeStep(data.recoveryCode);
-            return
+            return;
         }
 
         if(response.status === 409){
@@ -82,8 +82,8 @@ form.addEventListener("submit", async(event) =>{
         }
     }
     catch{
-        showError("Server was not able to be reached")
+        showError("Server was not able to be reached");
     }
     
     setBusy(false);
-})
+});
