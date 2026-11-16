@@ -1,10 +1,13 @@
 {
   "name": "internship-tracker",
   "version": "1.0.0",
+  "private": true,
+  
   "description": "This is going to be a website that anyone can use to monitor and track all internships they apply to",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch server/server.js",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Aidan4715/Internship-Tracker/issues"
   },
